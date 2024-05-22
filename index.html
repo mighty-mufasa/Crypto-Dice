@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="main-container">
+      <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Game</a></li>
+        <li><a href="">Gallery</a></li>
+      </ul>
+
+      <ul class="container-left">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+    <select class="list-option">
+      <option selected value="BTC">BTC</option>
+      <option value="ETH">ETH</option>
+      <option value="XRP">XRP</option>
+      <option value="LTC">LTC</option>
+      <option value="BCH">BCH</option>
+      <option value="DOGE">DOGE</option>
+      <option value="USDT">USDT</option>
+      <option value="DAI">DAI</option>
+      <option value="USDC">USDC</option>
+      <option value="INR">INR</option>
+    </select>
+
+    <div class="option-value">
+      <div class="btc">
+        <input class="coin-value" type="number" readonly value="0.00000301" />
+      </div>
+      <div class="btc" >
+        <img  class="btc-img" src="img/btc.png" alt="">
+      </div>
+      <div class="xrp">
+        <img class="xrp-img" src="img/xrp.png" alt="">
+      </div>
+      <div class="ltc">
+        <img class="ltc-img" src="img/ltc.png" alt="">
+      </div>
+      <div class="bch">
+        <img class="bch-img" src="img/bch.png" alt="">
+      </div>
+      <div class="doge">
+        <img class="doge-img" src="img/doge.png" alt="">
+      </div>
+      <div class="usdt">
+        <img class="usdt-img" src="img/usdt.png" alt="">
+      </div>
+      <div class="dai">
+        <img class="dai-img" src="img/dai.png" alt="">
+      </div>
+      <div class="usdc">
+        <img class="usdc-img" src="img/usdc.png" alt="">
+      </div>
+      <div class="inr">
+        <img class="inr-img" src="img/inr.webp" alt="">
+      </div>
+      <div class="eth">
+        <img class="eth-img" src="img/eth.png" alt="">
+      </div>
+      <div class="money">
+        <button class="balance" type="button">Balance</button>
+        <img class="money-img" src="img/wealth.png" alt="">
+      </div>
+    </div>
+
+    <div class="balancePage">
+      <div class="btc-balane">
+        <p>BTC</p>
+        <input class="balance" type="number" readonly value="0.00000300" />
+        <img class="btc-balane-img" src="img/btc.png" alt="">
+        <input class="btc-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="eth-balance">
+        <p>ETH</p>
+        <input class="balance" type="number" readonly value="0.00006600" />
+        <img class="eth-balance-img" src="img/eth.png" alt="">
+        <input class="eth-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="xrp-balance">
+        <p>XRP</p>
+        <input class="balance" type="number" readonly value="0.380">
+        <img class="xrp-balance-img" src="img/xrp.png" alt="">
+        <input  class="xrp-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="ltc-balance">
+        <p>LTC</p>
+        <input class="balance" type="number" readonly value="0.024" />
+        <img class="ltc-balance-img" src="img/ltc.png" alt="">
+        <input class="ltc-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="bch-balance">
+        <p>BCH</p>
+        <input class="balance" type="number" readonly value="0.044" />
+        <img class="bch-balance-img" src="img/bch.png" alt="">
+        <input class="bch-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="doge-balance">
+        <p>DOGE</p>
+        <input class="balance" type="number" readonly value="1.29" />
+        <img class="doge-balance-img" src="img/doge.png" alt="">
+        <input class="doge-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="usdt-balance">
+        <p>USDT</p>
+        <input class="balance" type="number" readonly value="0.20" />
+        <img class="usdt-balance-img" src="img/usdt.png" alt="">
+        <input class="usdt-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="inr-balance">
+        <p>INR</p>
+        <input class="balance" type="number" readonly value="0.20" />
+        <img class="inr-balance-img" src="img/inr.webp" alt="">
+        <input class="inr-withdraw" type="button" value="Withdraw">
+      </div>
+      <div class="up-arrow">
+        <i class="fa-solid fa-angle-up" style="color: #f6fafe;"></i>
+      </div>
+    </div>
+    
+    <div class="dice-container">
+      <div class="palay-type">
+        <div class="m">
+          <p class="manual">Manual</p>
+        </div>
+        <div class="a">
+          <p class="ato">Auto</p>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="amount-profit">
+          <div class="Bet-Amount">
+            <p>Bet Amount</p>
+            <input class="betAmount" type="number" value="0.00000010" />
+            <i class="fa-brands fa-bitcoin" style="color: #ffd43b"></i>
+            <button class="half"><span>½</span></button>
+            <button class="double"><span>2×</span></button>
+          </div>
+          <div class="profite">
+            <p>Profite on win</p>
+            <input class="profitAmount" type="number" readonly value="0.00000000" />
+            <i class="fa-brands fa-bitcoin" style="color: #ffd43b"></i>
+          </div>
+        </div>
+
+        <div class="win-chance">
+          <div class="roll-over">
+            <p class="rollEx">Roll Over</p>
+            <input class="exchangeNumber" type="number" readonly value="50.49" />
+            <i class="fa-solid fa-right-left exchange"></i>
+          </div>
+          <div class="multiplier">
+            <p>Payout</p>
+            <input class="multiplierNumber" type="number" value="2.00" />
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="win">
+            <p>Win Chance</p>
+            <input class="percentageNumber" type="number" value="49.50" />
+            <i class="fa-solid fa-percent"></i>
+          </div>
+        </div>
+        <div class="range">
+          <p>0</p>
+          <input class="rangeNumber" type="range" min="2" max="98" value="49" />
+          <p>98</p>
+        </div>
+        <div class="roll-dice">
+          <button class="btn-role">Roll Dice</button>
+        </div>
+        <div class="auto">
+          <div class="on-win">
+            <p>On Win</p>
+            <button class="reset win-reset" type="reset">Reset</button>
+            <button class="by win-by" type="button">Increase by:</button>
+            <input class="winInputValue" type="number" value="0" id="winVal"/>
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <div class="on-loss">
+            <p>On Loss</p>
+            <button class="reset loss-reset" type="reset">Reset</button>
+            <button class="by loss-by" type="button">Increase by:</button>
+            <input type="number" value="0" id="lossVa"/>
+            <i class="fa-solid fa-percent"></i>
+          </div>
+        </div>
+        <div class="stop-profit-loss">
+          <div class="stop-profit">
+            <p>Stop on Profit</p>
+            <input class="stop-on-profit" type="number" value="0.00000000" />
+            <i class="fa-brands fa-btc" style="color: #ffd43b"></i>
+          </div>
+          <div class="stop-on-loss">
+            <p>Stop on Loss</p>
+            <input class="stop-on-loss" type="number" value="0.00000000" />
+            <i class="fa-brands fa-btc" style="color: #ffd43b"></i>
+          </div>
+        </div>
+      </div>
+
+      <button class="auto-btn-role">Auto Roll Dice</button>
+    </div>
+    <div class="option-container">
+      <div class="option">
+        <div class="settings">
+          <i class="fa-solid fa-cog"></i>
+          <p>Settings</p>
+        </div>
+        <div class="Live-Stats">
+          <i class="fa-solid fa-chart-line"></i>
+          <p>LiveStats</p>
+        </div>
+        <div class="message">
+          <i class="fa-solid fa-envelope"></i>
+          <p>Message</p>
+        </div>
+        <div class="faucet">
+          <i class="fa-solid fa-faucet"></i>
+          <p>Faucet</p>
+        </div>
+      </div>
+    </div>
+    <div class="result-container">
+      <p class="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
