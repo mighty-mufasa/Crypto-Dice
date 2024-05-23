@@ -292,13 +292,24 @@ lossBy.addEventListener("click", getLossByEvent);
 
 const autoBtnRole = document.querySelector(".auto-btn-role");
 
+let autoInterval; // Declare a variable to keep track of the interval ID
+
 const autoRollEvent = () => {
-  setInterval(() => {
-    generatedNumber();
-  }, 100);
+  if (autoBtnRole.textContent === "Auto Roll Dice") {
+    // Start auto rolling
+    autoInterval = setInterval(() => {
+      generatedNumber();
+    }, 100);
+    autoBtnRole.textContent = "Stop Auto Roll";
+  } else {
+    // Stop auto rolling
+    clearInterval(autoInterval);
+    autoBtnRole.textContent = "Auto Roll Dice";
+  }
 };
 
 autoBtnRole.addEventListener("click", autoRollEvent);
+
 
 // Initial setup
 
