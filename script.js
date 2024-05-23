@@ -138,7 +138,7 @@ const mulRs = () => {
   const betAmountValue = parseFloat(betAmount.value) || 0;
   const coinValueFloat = parseFloat(coinValue.value) || 0;
   
-  // const StopProfit = parseFloat(stopProfit.value) || 0;
+  const StopProfit = parseFloat(stopProfit.value) || 0;
   // const StopLoss = parseFloat(stopLoss.value) || 0;
 
   if (result.textContent === "You win!" ) {
@@ -156,6 +156,10 @@ const mulRs = () => {
     console.log("Bet Amount:", betAmountValue);
     console.log("Multiplier Value:", parseFloat(multiplierValue));
     console.log("Multiplier Result:", multiplierResult);
+    
+   
+
+
 
     const resultMultiple = parseFloat(multiplierResult);
     const WinresultTotal = resultMultiple + coinValueFloat;
@@ -292,17 +296,17 @@ lossBy.addEventListener("click", getLossByEvent);
 
 const autoBtnRole = document.querySelector(".auto-btn-role");
 
-let autoInterval; // Declare a variable to keep track of the interval ID
+let autoInterval; // Declare 
 
 const autoRollEvent = () => {
   if (autoBtnRole.textContent === "Auto Roll Dice") {
-    // Start auto rolling
+    
     autoInterval = setInterval(() => {
       generatedNumber();
     }, 100);
     autoBtnRole.textContent = "Stop Auto Roll";
   } else {
-    // Stop auto rolling
+    
     clearInterval(autoInterval);
     autoBtnRole.textContent = "Auto Roll Dice";
   }
@@ -314,3 +318,4 @@ autoBtnRole.addEventListener("click", autoRollEvent);
 // Initial setup
 
 getRangeNumber();
+
